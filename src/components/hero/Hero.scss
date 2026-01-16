@@ -1,0 +1,21 @@
+.hero-containter {
+  height: var(--device-height);
+  width: 100%;
+  overflow-x: hidden;
+  //   background-color: red;
+
+  .job-abbr {
+    width: 90%;
+    height: 100dvh * 0.35;
+    margin: auto;
+    // background-color: red;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+
+    p {
+      font-weight: 900;
+      font-size: 120px;
+    }
+  }
+}

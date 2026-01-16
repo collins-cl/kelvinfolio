@@ -1,3 +1,7 @@
+:root {
+  --device-height: 100dvh;
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -7,4 +11,10 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "inter";
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
