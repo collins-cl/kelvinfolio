@@ -3,10 +3,11 @@
   width: 100%;
   overflow-x: hidden;
   //   background-color: red;
+  font-size: 18px;
 
   .job-abbr {
     width: 90%;
-    height: 100dvh * 0.35;
+    height: 100dvh * 0.30;
     margin: auto;
     // background-color: red;
     display: flex;
@@ -16,6 +17,29 @@
     p {
       font-weight: 900;
       font-size: 120px;
+    }
+  }
+
+  .hero-about {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .job-info {
+      display: flex;
+      width: 60%;
+      justify-content: space-between;
+      // background-color: red;
+
+      .job-title {
+        width: 45%;
+      }
+
+      .job-desc {
+        width: 43%;
+      }
     }
   }
 }

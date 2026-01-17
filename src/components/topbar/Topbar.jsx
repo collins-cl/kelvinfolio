@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Logo from "../logo/Logo";
 import "../topbar/Topbar.scss";
 
 const Topbar = () => {
@@ -7,9 +7,7 @@ const Topbar = () => {
       <ul>
         <section className="menu-logo">
           <p className="menu-btn">MENU</p>
-          <p className="logo">
-            <Link href="/">KElvin.folio™</Link>
-          </p>
+          <Logo />
         </section>
 
         <p className="menu-btn">since 2022</p>

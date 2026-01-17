@@ -1,0 +1,14 @@
+.floating-menu {
+  margin-top: 90px;
+  width: 100%;
+  height: 100px;
+  padding: 10px 0;
+
+  ul {
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
