@@ -21,14 +21,20 @@ const Hero = () => {
         chars: "01",
         duration: 1.5,
       },
-    }).fromTo(
-      ".hero-about p",
-      {
-        opacity: 0,
-      },
-      { opacity: 1 },
-      "<0.5"
-    );
+    })
+      .fromTo(
+        ".hero-about p",
+        {
+          opacity: 0,
+        },
+        { opacity: 1 },
+        "<0.5"
+      )
+      .fromTo(
+        ".floating-menu-container",
+        { y: 20, opacity: 0 },
+        { y: 0, opacity: 1 }
+      );
   });
 
   return (

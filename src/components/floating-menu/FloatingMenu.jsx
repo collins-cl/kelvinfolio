@@ -1,8 +1,12 @@
 import Link from "next/link";
 import Logo from "../logo/Logo";
 import "./FloatingMenu.scss";
+import { useGSAP } from "@gsap/react";
 
 const FloatingMenu = () => {
+    useGSAP(()=>{
+        
+    })
   return (
     <section className="floating-menu">
       <ul>
