@@ -11,17 +11,24 @@ const Hero = () => {
   gsap.registerPlugin(ScrambleTextPlugin, useGSAP);
 
   useGSAP(() => {
-    gsap.to(".job-abbr p", {
-      duration: 1,
-      delay: 0.3,
+    const tl = gsap.timeline({
+      ease: "power2.inOut",
+    });
+
+    tl.to(".job-abbr p", {
       scrambleText: {
         text: "CIV/CSE",
         chars: "01",
-        // speed: 0.3,
+        duration: 1.5,
       },
-      opacity: 1,
-      ease: "power2.inOut",
-    });
+    }).fromTo(
+      ".hero-about p",
+      {
+        opacity: 0,
+      },
+      { opacity: 1 },
+      "<0.5"
+    );
   });
 
   return (
@@ -48,7 +55,9 @@ const Hero = () => {
         <p className="current-date">jan 16, 2026</p>
       </div>
 
-      <FloatingMenu />
+      <div className="floating-menu-container">
+        <FloatingMenu />
+      </div>
     </div>
   );
 };

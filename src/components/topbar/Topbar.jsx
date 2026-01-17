@@ -1,7 +1,21 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import Logo from "../logo/Logo";
 import "../topbar/Topbar.scss";
 
 const Topbar = () => {
+  useGSAP(() => {
+    const tl = gsap.timeline({
+      ease: "power2.out",
+      delay: 0.1,
+    });
+
+    tl.fromTo(".topbar", { opacity: 0 }, { opacity: 1 }).fromTo(
+      ".topbar ul p",
+      { opacity: 0 },
+      { opacity: 1 }
+    );
+  });
   return (
     <div className="topbar">
       <ul>
