@@ -32,10 +32,12 @@ const Hero = () => {
       )
       .fromTo(
         ".floating-menu-container",
-        { y: 20, opacity: 0 },
+        { y: 10, opacity: 0 },
         { y: 0, opacity: 1 }
       );
   });
+
+ 
 
   return (
     <div id="hero" className="hero-containter">
